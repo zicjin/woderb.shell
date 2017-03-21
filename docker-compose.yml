@@ -12,7 +12,7 @@ services:
       - "27017:27017"
     volumes:
       - /volumes/mdata:/data/db
-    command: "--storageEngine=wiredTiger"
+    command: --storageEngine=wiredTiger
   consul1:
     image: consul
     ports:
@@ -22,7 +22,7 @@ services:
     volumes:
       - /volumes/cdata:/consul/data
       - /volumes/cconfig:/consul/config
-    command: "agent -server -node=n1 -bootstrap -ui -client='0.0.0.0' -bind='{{ GetPrivateIP }}'"
+    command: agent -server -node=n1 -bootstrap -ui -client='0.0.0.0' -bind='{{ GetPrivateIP }}'
   nginx1:
     image: nginx
     ports:
