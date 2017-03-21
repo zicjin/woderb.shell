@@ -1,5 +1,5 @@
 docker pull consul
-docker run --rm -d --name cn1 \
+docker run --rm -d --name consul1 \
 	-p 8400:8400 -p 8500:8500/tcp -p 53:8600/udp \
 	-v /volumes/cdata:/consul/data \
 	-v /volumes/cconfig:/consul/config \
