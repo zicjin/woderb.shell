@@ -1,0 +1,1 @@
+pm2 start cross-env TARGET=$1 node --harmony /root/spiderman.x/drivers/index_one_extract.js --name $1

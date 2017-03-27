@@ -1,0 +1,24 @@
+{
+  "apps" : [{
+    "name"        : "baiduhot",
+    "script"      : "/root/spiderman.x/drivers/index_one_extract.js",
+    "node_args"   : "--harmony",
+    "env": {
+      "TARGET": "baiduhot"
+    }
+  },{
+    "name"       : "toutiao",
+    "script"     : "/root/spiderman.x/drivers/index_one_extract_pt.js",
+    "node_args"   : "--harmony",
+    "env": {
+      "TARGET": "toutiao"
+    }
+  },{
+    "name"       : "weibo",
+    "script"     : "/root/spiderman.x/drivers/index_one_extract_pt.js",
+    "node_args"   : "--harmony",
+    "env": {
+      "TARGET": "weibo"
+    }
+  }]
+}
