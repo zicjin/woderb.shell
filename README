@@ -1,0 +1,3 @@
+#spiderman.x
+// http://pm2.keymetrics.io/docs/usage/pm2-doc-single-page/#ecosystemjson
+pm2 start spiderman.eco.json

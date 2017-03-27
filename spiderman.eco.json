@@ -1,24 +1,30 @@
 {
   "apps" : [{
     "name"        : "baiduhot",
-    "script"      : "/root/spiderman.x/drivers/index_one_extract.js",
+    "script"      : "drivers/index_one_extract.js",
+    "cwd"         : "/root/spiderman.x",
     "node_args"   : "--harmony",
     "env": {
       "TARGET": "baiduhot"
-    }
+    },
+    "error_file" : "/root/spiderman_logs/baiduhot.log"
   },{
     "name"       : "toutiao",
-    "script"     : "/root/spiderman.x/drivers/index_one_extract_pt.js",
+    "cwd"         : "/root/spiderman.x",
+    "script"     : "drivers/index_one_extract_pt.js",
     "node_args"   : "--harmony",
     "env": {
       "TARGET": "toutiao"
-    }
+    },
+    "error_file" : "/root/spiderman_logs/toutiao.log"
   },{
     "name"       : "weibo",
-    "script"     : "/root/spiderman.x/drivers/index_one_extract_pt.js",
+    "cwd"         : "/root/spiderman.x",
+    "script"     : "drivers/index_one_extract_pt.js",
     "node_args"   : "--harmony",
     "env": {
       "TARGET": "weibo"
-    }
+    },
+    "error_file" : "/root/spiderman_logs/weibo.log"
   }]
 }
