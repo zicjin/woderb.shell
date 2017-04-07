@@ -1,12 +1,13 @@
 {
   "apps" : [{
-    "name"       : "toutiao",
+    "name"       : "weibo",
     "cwd"         : "/root/spiderman.x",
     "script"     : "drivers/index_one_extract_pt.js",
     "node_args"   : "--harmony",
     "env": {
-      "TARGET": "toutiao"
+      "NODE_ENV": "production",
+      "TARGET": "weibo"
     },
-    "error_file" : "/root/spiderman_logs/toutiao.log"
+    "error_file" : "/root/spiderman_logs/weibo.log"
   }]
 }
