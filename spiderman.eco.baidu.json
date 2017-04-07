@@ -1,0 +1,12 @@
+{
+  "apps" : [{
+    "name"        : "baiduhot",
+    "script"      : "drivers/index_one_extract.js",
+    "cwd"         : "/root/spiderman.x",
+    "node_args"   : "--harmony",
+    "env": {
+      "TARGET": "baiduhot"
+    },
+    "error_file" : "/root/spiderman_logs/baiduhot.log"
+  }]
+}
