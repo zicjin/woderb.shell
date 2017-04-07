@@ -5,6 +5,7 @@
     "cwd"         : "/root/spiderman.x",
     "node_args"   : "--harmony",
     "env": {
+      "NODE_ENV": "production",
       "TARGET": "baiduhot"
     },
     "error_file" : "/root/spiderman_logs/baiduhot.log"
@@ -14,6 +15,7 @@
     "script"     : "drivers/index_one_extract_pt.js",
     "node_args"   : "--harmony",
     "env": {
+      "NODE_ENV": "production",
       "TARGET": "toutiao"
     },
     "error_file" : "/root/spiderman_logs/toutiao.log"
@@ -23,6 +25,7 @@
     "script"     : "drivers/index_one_extract_pt.js",
     "node_args"   : "--harmony",
     "env": {
+      "NODE_ENV": "production",
       "TARGET": "weibo"
     },
     "error_file" : "/root/spiderman_logs/weibo.log"
