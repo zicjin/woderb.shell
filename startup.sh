@@ -18,5 +18,6 @@ sudo apt-get update && sudo apt-get install yarn
 
 yarn global add cross-env pm2
 
+# https://askubuntu.com/a/510063
 wget https://dl.google.com/linux/direct/google-chrome-beta_current_amd64.deb
 sudo dpkg -i google-chrome-beta_current_amd64.deb
