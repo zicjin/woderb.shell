@@ -7,8 +7,14 @@ sudo add-apt-repository \
    stable"
 sudo apt-get update && sudo apt-get install docker-ce
 
+# https://docs.docker.com/compose/install/#install-compose
+sudo curl -L https://github.com/docker/compose/releases/download/1.15.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+curl -L https://raw.githubusercontent.com/docker/compose/master/contrib/completion/bash/docker-compose -o /etc/bash_completion.d/docker-compose
+docker-compose --version
+
 # https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
-curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install -y nodejs build-essential
 
 # https://yarnpkg.com/en/docs/install#linux-tab
@@ -18,5 +24,7 @@ sudo apt-get update && sudo apt-get install yarn
 
 yarn global add cross-env pm2
 
+# https://askubuntu.com/a/510063
+sudo apt-get -f install
 wget https://dl.google.com/linux/direct/google-chrome-beta_current_amd64.deb
 sudo dpkg -i google-chrome-beta_current_amd64.deb
